@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: whitesmoke;
+    cursor: pointer;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+
+.wrap{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+   overflow: hidden;
+}
+.menu{
+    width: 25%;
+    height: 85vh;
+    overflow: scroll;
+    background-color: rgb(16, 16, 16);
+
+}
+.menu h1{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10%;
+    animation: logo 1.5s;
+    
+
+}
+.menu ul{
+    width: 100%;
+    height: auto;
+    margin-top: 7%;
+    padding: 0;
+    margin-bottom: 20%;
+    margin-top: 10%;
+
+}
+.menu li {
+    width: 100%;
+    padding:2% ;
+    margin-top: 2%;
+    font-size: 25px;
+    font-weight: 300;
+    border: none;
+    color: darkgray;
+    list-style: none;
+    
+}
+.menu li:hover{
+    color: white;
+}
+.menu h1 i {
+    margin: 2%;
+    padding-bottom: 2%;
+    width: 20;
+    height: 20;
+    fill: white;
+}
+.menu li i {
+    margin: 2%;
+    padding-bottom: 2%;
+    width: 24;
+    height: 24;
+}
+
+#home{
+    animation: slide 0.5s;
+}
+#playlist{
+    animation: slide 1.5s;
+}
+#trendings{
+    animation: slide 2.5s;
+}
+.poster{
+    height: 95%;
+    width: 15%;
+    border: 1px solid white;
+}
+#song_title{
+    height: 95%;
+    width: 75%;
+    font-size: 20px;
+    margin-left: 5%;
+    text-align: left;
+}
+.main_content{
+    width:75%;
+    height: 85vh;
+}
+#home_content{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    overflow: scroll;
+    animation: fade_in 1s;
+}
+.hero{
+    width: 100%;
+    height: 40%;
+    background-color: white;
+   margin-bottom: 4%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   flex-direction: column;
+   color: black;
+}
+.hero h1{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    animation: fade_in 1.5s;
+    color: black;
+   
+
+
+}
+.hero h3{
+    width: 100%;
+    text-align: center;
+    padding-left: 5%;
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+}
+.hero i {
+    width: 20;
+    height: 20;
+    color: black;
+}
+.head{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 4%;
+}
+head h1{
+    font-size: 25px;
+    float: left;   
+}
+#more_playlist{
+    color: darkgray;
+    margin-left: 83%;
+    float: right;
+}
+#more_trendings{
+    color: darkgray;
+    margin-left: 80%;
+    float: right;
+}
+.sug_song{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+   overflow-x: scroll;
+   overflow-y: hidden;
+   padding-right: 3%;
+}
+.song{
+    width: 60%;
+    height: 100%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.song img{
+    width: 35vb;
+    height: 60%;
+}
+.song img:hover {
+    opacity: 0.7;
+}
+
+.song #songtitle_l{
+    width: 90%;
+    padding: 3%;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 2%;
+    text-overflow:ellipsis;
+}
+#songtitle_l h9{
+ font-size: 8px;
+}
+.sug_artist{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+.artist{
+    width: 50%;
+    height: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#poster_a{
+    border-radius: 50%;
+    width: 90%;
+    height: 85%;
+    margin-bottom:12% ;
+}
+#poster_a:hover{
+    opacity: .7;
+    box-shadow: -1px -1px 10px 10px rgba(255, 255, 255, 0.363);
+}
+.sug_playlist{
+    width: 100%;
+    height: 65%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: scroll;
+    
+
+}
+.playlist{
+    width: 70%;
+    height: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#poster_p{
+    width: 100%;
+    height: 85%;
+    position: relative;
+
+}
+
+.p_title{
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+}
+#playlist_content{
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: scroll;
+    animation: fade_in 1s;
+
+
+}
+.P_h{
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 50px;
+
+}
+.playlist_folder{
+    width: 90%;
+    height: 45vh;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    box-shadow: 1px 1px 6px 6px rgba(255, 255, 255, 0.114);
+    
+}
+
+.playlist_info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2%;
+
+}
+.playlist_info img {
+    width: 40%;
+    height: 98%;
+}
+.playlist_info h1{
+    font-size: 45px;
+    font-weight: bolder; 
+    margin-left: 0;
+    margin-top: 5%;
+    margin-bottom:2%;
+  
+   
+}
+.playlist_info h2 {
+    font-size:10px;
+    font-weight: 200;
+    color: darkgray;
+    width: 50%;
+    height: 6%;
+    overflow:-moz-hidden-unscrollable;
+}
+.playlist_info h3 {
+    font-size: 15px;
+    color: lightgray;
+    font-weight: 100;
+}
+#playlist_songs{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+#playlist_songs img{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#trendings_content{
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: scroll;
+    animation: fade_in 1s;
+}
+#trendings_content h1{
+    margin:5%;
+}
+.trendingsong{
+    width: 90%;
+    height: 30%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+.trendingsong img {
+    height: 100%;
+    width: 20%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.trendingsong h4 {
+    font-size: 25px;
+ 
+   
+}
+.trendingsong h3 {
+    font-size: 25px;
+    width: 60%;
+}
+
+.trendingsong h3  h9{
+    font-size: 8px;
+}
+#artist_1{
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: scroll;
+    animation: fade_in 1s;
+}
+.hero_a1 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+}
+.hero_a1 h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 10%;
+
+}
+.song_k{
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+}
+.s_k{
+
+    width: 90%;
+    height: 30%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+.s_k:hover{
+    opacity: 0.7;
+}
+.s_k img {
+    height: 100%;
+    width: 20%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.s_k h1{
+    font-size: 25px;
+    width: 60%;
+}
+.s_k h1  h9{
+    font-size: 8px;
+}
+
+.s_k .bi{
+    font-size: 30px;
+}
+
+#artist_2{
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: scroll;
+    animation: fade_in 1s;
+}
+.hero_a2 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+}
+.hero_a2 h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 10%;
+
+}
+.song_a{
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+}
+.s_a{
+
+    width: 90%;
+    height: 30%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+.s_a:hover{
+    opacity: 0.7;
+}
+.s_a img {
+    height: 100%;
+    width: 20%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.s_a h1{
+    font-size: 25px;
+    width: 60%;
+}
+.s_a h1  h9{
+    font-size: 8px;
+}
+.s_a .bi{
+    font-size: 30px;
+}
+.hero_a2 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+}
+
+#artist_3{
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: scroll;
+    animation: fade_in 1s;
+}
+.hero_a3 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+}
+.hero_a3 h1 {
+    font-size: 40px;
+    font-weight: bolder;
+ 
+    margin-left: 10%;
+
+}
+.song_c{ 
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+}
+.s_c:hover{
+    opacity: 0.7;
+}
+
+.s_c{
+
+    width: 90%;
+    height: 30%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+.s_c img {
+    height: 100%;
+    width: 20%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.s_c h1{
+    font-size: 25px;
+    width: 60%;
+}
+.s_c h1  h9{
+    font-size: 8px;
+}
+.s_c .bi{
+    font-size: 30px;
+}
+
+#artist_4{
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: scroll;
+    animation: fade_in 1s;
+}
+.hero_a4 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+}
+.hero_a4 h1 {
+    font-size: 40px;
+    font-weight: bolder;
+ 
+    margin-left: 10%;
+
+}
+
+.song_t{
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+}
+.s_t{
+
+    width: 90%;
+    height: 30%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+.s_t:hover{
+    opacity: 0.7;
+}
+.s_t img {
+    height: 100%;
+    width: 20%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.s_t h1{
+    font-size: 25px;
+    width: 60%;
+}
+.s_t h1  h9{
+    font-size: 8px;
+}
+.s_t .bi{
+    font-size: 30px;
+}
+.control{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(35, 34, 34);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+.control h3{
+    color: darkgray;
+    font-size: 15px;
+    overflow: hidden;
+
+}
+#masterPlay{
+    width: 20;
+    height: 20;
+    margin:1% ;
+}
+#masterBack{
+    width: 20;
+    height: 20;
+}
+#masterForward{
+    width: 20;
+    height: 20;
+    margin-right: 2%;
+}
+#poster_live{
+    height: 80%;
+    width: 6%;
+    margin-left: 3%;
+    border: 1px solid white;
+    animation: fade_in 1s;
+
+}
+#song_title_live{
+    height: 95%;
+    width: 25%;
+    padding:2% ;
+    font-size: 15px;  
+    text-align: left;
+    text-overflow:ellipsis;
+    animation: fade_in 1s;
+
+}
+#song_title_live h9{
+ font-size: 8px;
+ display: flex;
+ flex-wrap: nowrap;
+ overflow: ellipsis;
+}
+
+
+#seek{
+    width: 30%;
+    margin: 1%;
+    accent-color: rgb(210, 205, 205);
+    
+    
+    
+}
+#shuffle{
+    margin: 2%;
+    color: darkgray;
+}
+
+#download{
+    margin: 2%;
+}
+#vol {
+    width: 10%;
+    margin-right: 2%;
+    accent-color: rgb(210, 205, 205);
+    
+}
+.control svg{
+    margin-left: 1%;
+}
+#currentStart{
+    width: 4%;
+    margin-right: 0%;
+}
+#currentEnd{
+    width: 5%;
+}
+.control i {
+    width: 20;
+    height: 20;
+}
+.trendingsong .bi{
+    font-size: 40px;
+}
+#vi{
+    font-size: 25px;
+}
+@keyframes fade_in{
+    0%{
+        opacity: 0;
+    }
+   
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes logo{
+    0%{
+        opacity: 0;
+        transform: translateY(-40px);
+    }   
+   
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: translateX(-70px);
+    }   
+   
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes slideup{
+    0%{
+        transform: translateY(80px);
+    }   
+   
+    100%{
+        transform: translateY(0px);
+    }
+}
